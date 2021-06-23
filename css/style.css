@@ -109,7 +109,7 @@ h1 {
 .sky {
     background: linear-gradient(0deg, #e7c6f0, #1310b4);
     width: 100%;
-    height: 500px;
+    height: 70vh;
     position: absolute;
     top: 0;
 }
@@ -117,9 +117,9 @@ h1 {
 .ground {
     background-color: rgb(115, 184, 115);
     width: 100%;
-    height: 300px;
+    height: 30vh;
     position: absolute;
-    bottom: -50px;
+    bottom: 0;
     z-index: 1;
 }
 
@@ -150,7 +150,7 @@ h1 {
 .tree {
     z-index: 2;
     position: absolute;
-    left: 1100px;
+    left: 80%;
     top: 350px;
 }
 
@@ -195,25 +195,25 @@ h1 {
 }
 
 .background-1 {
-    width: 500px;
+    width: 35%;
     height: 300px;
     background-color: rgb(103, 167, 103);
     border-radius: 50%;
     z-index: 0;
     position: absolute;
     bottom: 50px;
-    left: 250px;
+    left: 20%;
 }
 
 .background-2 {
-    width: 700px;
-    height: 500px;
+    width: 50%;
+    height: 55vh;
     background-color: rgb(89, 145, 89);
     border-radius: 50%;
     z-index: 0;
     position: absolute;
-    bottom: -50px;
-    left: 650px;
+    bottom: 0px;
+    left: 40%;
 }
 
 .sun {
