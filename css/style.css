@@ -1,0 +1,362 @@
+.all {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link_card {
+    text-decoration: none;
+    margin: auto;
+    position: relative;
+    margin: auto;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 10px 10px grey;
+    color: black;
+    border-radius: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: Helvetica;
+    font-weight: 500;
+}
+
+.image_card {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 20px;
+    z-index: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.image_card:hover {
+    top: 0px;
+}
+
+.bottom_card {
+    width: 100%;
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    height: 100px;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+    box-shadow: 0 10px 10px grey;
+    bottom: -20px;
+}
+
+.bottom_card:hover {
+    bottom: 0;
+}
+
+.heart {
+    position: absolute;
+    left: 50px;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-45deg);
+    animation-name: heart;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.heart::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+}
+
+.heart::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(0.5) rotate(-45deg);
+    }
+    50% {
+        transform: scale(1) rotate(-45deg);
+    }
+    100% {
+        transform: scale(0.5) rotate(-45deg);
+    }
+}
+
+.sky {
+    background: linear-gradient(0deg, #e7c6f0, #1310b4);
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+}
+
+.ground {
+    background-color: rgb(115, 184, 115);
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: -50px;
+    z-index: 1;
+}
+
+.star {
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 0px 10px white;
+}
+
+.star-1 {
+    top: 50px;
+    left: 60%;
+}
+
+.star-2 {
+    top: 300px;
+    left: 90%;
+}
+
+.star-3 {
+    top: 120px;
+    left: 20%;
+}
+
+.tree {
+    z-index: 2;
+    position: absolute;
+    left: 1100px;
+    top: 350px;
+}
+
+.trunk {
+    width: 50px;
+    height: 200px;
+    background-color: brown;
+    position: absolute;
+}
+
+.leaf {
+    background-color: green;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.leaf-1 {
+    bottom: -10px;
+    left: 0;
+}
+
+.leaf-2 {
+    bottom: 50px;
+    left: 20px;
+}
+
+.leaf-3 {
+    bottom: -30px;
+    left: -70px;
+}
+
+.leaf-4 {
+    bottom: 50px;
+    left: -120px;
+}
+
+.leaf-5 {
+    bottom: 100px;
+    left: -30px;
+}
+
+.background-1 {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(103, 167, 103);
+    border-radius: 50%;
+    z-index: 0;
+    position: absolute;
+    bottom: 50px;
+    left: 250px;
+}
+
+.background-2 {
+    width: 700px;
+    height: 500px;
+    background-color: rgb(89, 145, 89);
+    border-radius: 50%;
+    z-index: 0;
+    position: absolute;
+    bottom: -50px;
+    left: 650px;
+}
+
+.sun {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 340px;
+    left: 41%;
+    box-shadow: 0px 0px 100px red;
+}
+
+.eol_center {
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.eol_pale {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    width: 20px;
+    height: 70px;
+    margin-left: 10px;
+    top: 30px;
+}
+
+.eol_pale-2 {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    width: 20px;
+    height: 70px;
+    margin-left: 10px;
+    bottom: 30px;
+}
+
+.eol_pale-3 {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    width: 70px;
+    height: 20px;
+    margin-left: 30px;
+    bottom: 10px;
+}
+
+.eol_pale-4 {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    width: 70px;
+    height: 20px;
+    margin-left: -60px;
+    bottom: 10px;
+}
+
+.eol_head {
+    position: absolute;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.eol_pic {
+    position: absolute;
+    height: 200px;
+    background: white;
+    width: 10px;
+    top: 10px;
+    left: 15px;
+    z-index: 2;
+}
+
+.eol {
+    position: absolute;
+    left: 35%;
+}
+
+@keyframes rotation {
+    0% {}
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cloud {
+    position: absolute;
+    z-index: 0;
+    animation-name: translate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes translate {
+    50% {
+        transform: translateX(-100px);
+    }
+}
+
+.cloud2 {
+    position: absolute;
+    z-index: 0;
+    right: 200px;
+    top: 100px;
+}
+
+.cloud3 {
+    position: absolute;
+    z-index: 0;
+    left: 240px;
+    top: 250px;
+}
+
+.cloud-0 {
+    position: absolute;
+    background-color: white;
+    border-radius: 100px;
+    width: 150px;
+    height: 100px;
+}
+
+.cloud-1 {
+    left: 20px;
+    bottom: 20px;
+}
+
+.cloud-2 {
+    left: -40px;
+    bottom: 0px;
+}
+
+.cloud-3 {
+    left: -90px;
+    bottom: 30px;
+}
+
+.cloud-4 {
+    left: -50px;
+    bottom: 60px;
+}
