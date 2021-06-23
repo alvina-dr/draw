@@ -107,7 +107,7 @@ h1 {
 }
 
 .sky {
-    background: linear-gradient(0deg, #e7c6f0, #1310b4);
+    background: linear-gradient(0deg, #e25151, #da88cf, #1310b4, #02007c);
     width: 100%;
     height: 70vh;
     position: absolute;
